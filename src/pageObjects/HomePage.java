@@ -19,14 +19,18 @@ public class HomePage {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		List <WebElement> willkomenZuruck=new ArrayList<>();
-		willkomenZuruck=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("drupal-modal")));
-		
-		if(willkomenZuruck.size()>0) {
-			return willkomenZuruck.get(0);
+		try {
+			willkomenZuruck=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("drupal-modal")));
 		}
-		else {
+		
+		catch(Exception e) {
 			return null;
 		}
+		
+		
+		
+			return willkomenZuruck.get(0);
+				
 	}
 
 }

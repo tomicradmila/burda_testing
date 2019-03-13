@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginTests {
 	public static void loginButtonClick(WebDriver driver) {
+		String description="check if popup appears";
 		driver.get("https://www.burdastyle.de/");
 		LoginActions.LoginButtonClick(driver);
 		if(HomePage.willkomenZuruck(driver)!=null) {

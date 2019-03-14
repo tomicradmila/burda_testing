@@ -1,7 +1,7 @@
 package automation;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+//import java.io.BufferedReader;
+//import java.io.FileReader;
 import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -14,6 +14,8 @@ import tests.LoginTests;
 public class Main {
 
 	public static void main(String[] args) {
+		String result;
+		
 		//String filePath="C:\\IT_Bootcamp\\JAVA\\2018-10-02\\TestProba.txt";
 		//String line="";
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -25,18 +27,23 @@ public class Main {
 		//PrintWriter prp=new PrintWriter("Prezime.txt");
 		//BufferedReader bf=new BufferedReader(fr);
 		
-		pri.close();
-		//prp.close();
-		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
 		// TODO Auto-generated method stub
 		//System.setProperty("webdriver.chrome.driver","/usr/lib/chromium-browser/chromedriver");
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		LoginTests.loginButtonClick(driver);
+		result=LoginTests.loginButtonClick(driver);
 		driver.close();
+		//prp.close();
+		pri.write(result+"\r" );
+		for(int i=0;i<50;i++) {
+			pri.write("-");
+		}
+		pri.close();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
 		
 	}
 

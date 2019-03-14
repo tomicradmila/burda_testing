@@ -5,15 +5,18 @@ import pageObjects.HomePage;
 import org.openqa.selenium.WebDriver;
 
 public class LoginTests {
-	public static void loginButtonClick(WebDriver driver) {
+	public static String loginButtonClick(WebDriver driver) {
 		String description="check if popup appears";
+		String result="test name: "+description+"---- status: ";
 		driver.get("https://www.burdastyle.de/");
 		LoginActions.LoginButtonClick(driver);
 		if(HomePage.willkomenZuruck(driver)!=null) {
-			System.out.println("uspesan test");
+			System.out.println("passed");
+			return result +"passed";
 		}
 		else {
-			System.out.println("neuspesan test");
+			System.out.println("failed");
+			return result+"*****failed*****";
 		}
 		
 	}

@@ -15,6 +15,12 @@ public class HomePage {
 		return loginButton;
 	}
 	
+	public static WebElement cookieButton(WebDriver driver) {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebElement cookieButton=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'OK')]")));
+		return cookieButton;
+	}
+	
 	public static WebElement willkomenZuruck(WebDriver driver) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);

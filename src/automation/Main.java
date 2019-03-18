@@ -6,10 +6,12 @@ import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import utility.Constant;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import tests.LoginTests;
+
+import tests.FooterTests;
 
 public class Main {
 
@@ -24,20 +26,28 @@ public class Main {
 		try {
 		//FileReader fr=new FileReader(filePath);//citac fajlova, kao nas skener
 		PrintWriter pri=new PrintWriter(fileName);
-		//PrintWriter prp=new PrintWriter("Prezime.txt");
+	
 		//BufferedReader bf=new BufferedReader(fr);
 		
-		// TODO Auto-generated method stub
-		//System.setProperty("webdriver.chrome.driver","/usr/lib/chromium-browser/chromedriver");
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		result=LoginTests.loginButtonClick(driver);
+		//result=LoginTests.loginButtonClick(driver);
+		result=FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks);
+		String result2;
+		result2=FooterTests.checkMagazinesLinks(driver, Constant.magazinsLinks);
 		driver.close();
-		//prp.close();
+		
 		pri.write(result+"\r" );
 		for(int i=0;i<50;i++) {
 			pri.write("-");
 		}
+		pri.write("\r");
+		
+		pri.write(result2+"\r" );
+		for(int i=0;i<50;i++) {
+			pri.write("-");
+		}
+		
 		pri.close();
 		}
 		catch(Exception e){

@@ -1,5 +1,5 @@
 package tests;
-
+import java.io.PrintWriter;
 import org.openqa.selenium.WebDriver;
 
 import actions.FooterActions;
@@ -7,10 +7,11 @@ import actions.FooterActions;
 import pageObjects.HomePage;
 
 public class FooterTests {
-	public static String checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls) throws InterruptedException {
+	public static String checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
 		String description="check if all social networks links are working";
 		String result="test name: "+description+"---- status: ";
 		String[] socialNetworks= {"facebook","pinterest", "instagram", "youtube"};
+		String writeInTestResults;
 		driver.get("https://www.burdastyle.de/");
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {

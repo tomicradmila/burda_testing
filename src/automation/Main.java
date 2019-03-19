@@ -32,7 +32,7 @@ public class Main {
 		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		WebDriver driver=new ChromeDriver();
 		//result=LoginTests.loginButtonClick(driver);
-		result=FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks);
+		result=FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks, pri);
 		String result2;
 		result2=FooterTests.checkMagazinesLinks(driver, Constant.magazinsLinks);
 		driver.close();

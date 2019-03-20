@@ -96,7 +96,7 @@ public class FooterActions {
 		
 		Actions builder4 = new Actions(driver);
 		Action clickOnElle=builder4
-				.moveToElement(FooterMagazines.bazaarLink(driver))
+				.moveToElement(FooterMagazines.elleLink(driver))
 				.click()
 				.build();
 		

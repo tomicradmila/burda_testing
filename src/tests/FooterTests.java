@@ -7,7 +7,7 @@ import actions.FooterActions;
 import pageObjects.HomePage;
 
 public class FooterTests {
-	public static String checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
+	public static void checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
 		String description="check if all social networks links are working";
 		String result="test name: "+description+"---- status: ";
 		String[] socialNetworks= {"facebook","pinterest", "instagram", "youtube"};
@@ -42,14 +42,21 @@ public class FooterTests {
 			testStatus="passed";
 		}
 		
-		return result +testStatus;
+		writeInTestResults= result +testStatus;
+		
+		pri.write(writeInTestResults+"\r" );
+		for(int i=0;i<50;i++) {
+			pri.write("-");
+		}
+		pri.write("\r");
 		
 	}
 	
-	public static String checkMagazinesLinks(WebDriver driver,String[]expectedUrls) throws InterruptedException {
+	public static void checkMagazinesLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
 		String description="check if all magazines external links are working";
 		String result="test name: "+description+"---- status: ";
 		String[] socialNetworks= {"bunte","freundin", "inStyle", "elle","bazaar"};
+		String writeInTestResults;
 		driver.get("https://www.burdastyle.de/");
 		driver.manage().window().maximize();
 //		if(HomePage.cookieButton(driver)!=null) {
@@ -80,7 +87,12 @@ public class FooterTests {
 			testStatus="passed";
 		}
 		
-		return result +testStatus;
+		writeInTestResults= result +testStatus;
+		pri.write(writeInTestResults+"\r" );
+		for(int i=0;i<50;i++) {
+			pri.write("-");
+		}
+		pri.write("\r");
 		
 	}
 

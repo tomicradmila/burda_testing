@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FooterMagazines {
 public static WebElement bunteLink (WebDriver driver) {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement bunteLink;
 		try {
 			 bunteLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'BUNTE Webseite besuchen')]")));
@@ -23,7 +23,7 @@ public static WebElement bunteLink (WebDriver driver) {
 	}
 public static WebElement freundinLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement freundinLink;
 	try {
 		 freundinLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'freundin Webseite besuchen')]")));
@@ -38,7 +38,7 @@ public static WebElement freundinLink (WebDriver driver) {
 
 public static WebElement inStyleLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement inStyleLink;
 	try {
 		inStyleLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'InStyle Webseite besuchen')]")));
@@ -53,7 +53,7 @@ public static WebElement inStyleLink (WebDriver driver) {
 
 public static WebElement elleLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement elleLink;
 	try {
 		elleLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Elle Webseite besuchen')]")));
@@ -68,7 +68,7 @@ public static WebElement elleLink (WebDriver driver) {
 
 public static WebElement bazaarLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement bazaarLink;
 	try {
 		bazaarLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Harpers Bazaar Webseite besuchen')]")));

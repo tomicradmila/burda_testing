@@ -1,0 +1,1 @@
+test name: check if all social networks links are working---- status: passed--------------------------------------------------

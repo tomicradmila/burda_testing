@@ -10,10 +10,10 @@ public class FooterSocialNetworks {
 	
 public static WebElement facebookLink (WebDriver driver) {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 5);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement facebookLink;
 		try {
-			 facebookLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Like uns auf FacebookTEST')]")));
+			 facebookLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Like uns auf Facebook')]")));
 		}
 		
 		catch(Exception e) {
@@ -24,7 +24,7 @@ public static WebElement facebookLink (WebDriver driver) {
 	}
 public static WebElement pinterestLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement pinterestLink;
 	try {
 		 pinterestLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Entdecke unsere virtuelle Pinnwand')]")));
@@ -39,7 +39,7 @@ public static WebElement pinterestLink (WebDriver driver) {
 
 public static WebElement instagramLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement instagramLink;
 	try {
 		 instagramLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Augenblicke der Kreativität')]")));
@@ -54,7 +54,7 @@ public static WebElement instagramLink (WebDriver driver) {
 
 public static WebElement youtubeLink (WebDriver driver) {
 	
-	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement youtubeLink;
 	try {
 		 youtubeLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'DIY Videos - Tipps und Tricks')]")));

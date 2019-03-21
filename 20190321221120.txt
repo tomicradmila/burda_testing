@@ -1,0 +1,1 @@
+test name: check if all social networks links are working---- status: pinterest: failed;instagram: failed;youtube: failed;--------------------------------------------------test name: check if all magazines external links are working---- status: elle: failed;bazaar: failed;--------------------------------------------------

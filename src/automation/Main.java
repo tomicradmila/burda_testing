@@ -21,7 +21,7 @@ public class Main {
 		//String line="";
 		//FileReader fr=new FileReader(filePath);//citac fajlova, kao nas skener
 		//BufferedReader bf=new BufferedReader(fr);
-		
+		String url=Constant.burdaMainUrlStaging;
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
 		String fileName=dateFormat.format(date).toString()+".txt";
@@ -30,9 +30,10 @@ public class Main {
 				System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 				WebDriver driver=new ChromeDriver();
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+				
 				//here is where we call our test
-				FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks, pri);
-				FooterTests.checkMagazinesLinks(driver, Constant.magazinsLinks,pri);
+				FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks, pri, url);
+				FooterTests.checkMagazinesLinks(driver, Constant.magazinsLinks,pri, url);
 				
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*		
 				driver.close();

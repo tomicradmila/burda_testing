@@ -13,7 +13,7 @@ public static WebElement facebookLink (WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		WebElement facebookLink;
 		try {
-			 facebookLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Like uns auf Facebook')]")));
+			 facebookLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Like uns auf FacebookTEST')]")));
 		}
 		
 		catch(Exception e) {

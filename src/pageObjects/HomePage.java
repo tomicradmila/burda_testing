@@ -17,7 +17,15 @@ public class HomePage {
 	
 	public static WebElement cookieButton(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
-		WebElement cookieButton=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'OK')]")));
+		WebElement cookieButton;
+		try {
+			cookieButton=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(), 'OK')]")));
+		}
+		
+		catch(Exception e) {
+			return null;
+		}
+		
 		return cookieButton;
 	}
 	

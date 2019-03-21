@@ -7,12 +7,12 @@ import actions.FooterActions;
 import pageObjects.HomePage;
 
 public class FooterTests {
-	public static void checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
+	public static void checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri, String url) throws InterruptedException {
 		String description="check if all social networks links are working";
 		String result="test name: "+description+"---- status: ";
 		String[] socialNetworks= {"facebook","pinterest", "instagram", "youtube"};
 		String writeInTestResults;
-		driver.get("https://www.burdastyle.de/");
+		driver.get(url);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
 			HomePage.cookieButton(driver).click();
@@ -34,10 +34,9 @@ public class FooterTests {
 		for (int i=0;i<4;i++) {
 			if(results[i].equals("not ok")) {
 				testStatus=testStatus.concat(socialNetworks[i]+": failed;");
-				
-			
 			}
 		}
+		
 		if(testStatus.equals("")) {
 			testStatus="passed";
 		}
@@ -52,16 +51,16 @@ public class FooterTests {
 		
 	}
 	
-	public static void checkMagazinesLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri) throws InterruptedException {
+	public static void checkMagazinesLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri, String url) throws InterruptedException {
 		String description="check if all magazines external links are working";
 		String result="test name: "+description+"---- status: ";
 		String[] socialNetworks= {"bunte","freundin", "inStyle", "elle","bazaar"};
 		String writeInTestResults;
-		driver.get("https://www.burdastyle.de/");
+		driver.get(url);
 		driver.manage().window().maximize();
-//		if(HomePage.cookieButton(driver)!=null) {
-//			HomePage.cookieButton(driver).click();
-//		}
+		if(HomePage.cookieButton(driver)!=null) {
+			HomePage.cookieButton(driver).click();
+		}
 		
 		String[] linksUrls=FooterActions.checkMagazines(driver);
 		String[] results = new String[5];
@@ -79,10 +78,9 @@ public class FooterTests {
 		for (int i=0;i<5;i++) {
 			if(results[i].equals("not ok")) {
 				testStatus=testStatus.concat(socialNetworks[i]+": failed;");
-				
-			
 			}
 		}
+		
 		if(testStatus.equals("")) {
 			testStatus="passed";
 		}

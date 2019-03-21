@@ -10,23 +10,30 @@ public class FooterActions {
 	public static String[] checkSocialNetworks(WebDriver driver) {
 		String[] urls = new String[4];
 		Actions builder = new Actions(driver);
-		Action clickOnFacebook=builder
-				.moveToElement(FooterSocialNetworks.facebookLink(driver))
-				.click()
-				.build();
 		
-		clickOnFacebook.perform();
+		if(FooterSocialNetworks.facebookLink(driver)!=null) {
+			Action clickOnFacebook=builder
+					.moveToElement(FooterSocialNetworks.facebookLink(driver))
+					.click()
+					.build();
+			
+			clickOnFacebook.perform();
+		}
+		
 		
 		urls[0]=driver.getCurrentUrl();
 		driver.navigate().back();
 		
 		Actions builder2 = new Actions(driver);
-		Action clickOnPinterest=builder2
-				.moveToElement(FooterSocialNetworks.pinterestLink(driver))
-				.click()
-				.build();
+		if(FooterSocialNetworks.pinterestLink(driver)!=null) {
+			Action clickOnPinterest=builder2
+					.moveToElement(FooterSocialNetworks.pinterestLink(driver))
+					.click()
+					.build();
+			
+			clickOnPinterest.perform();
+		}
 		
-		clickOnPinterest.perform();
 			
 		urls[1]=driver.getCurrentUrl();
 		driver.navigate().back();

@@ -8,4 +8,6 @@ public class Constant {
 	public static final String [] magazinsLinks = {"https://www.bunte.de/","https://www.freundin.de/"
 			,"https://www.instyle.de/","https://www.elle.de/", "https://www.harpersbazaar.de/"
 	};
+	public static final String burdaMainUrl="https://www.burdastyle.de/";
+	public static final String burdaMainUrlStaging="https://staging-env.burdastyle.de/";
 }

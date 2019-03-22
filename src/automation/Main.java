@@ -30,12 +30,17 @@ public class Main {
 				System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 				WebDriver driver=new ChromeDriver();
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				
 				//here is where we call our test
-				FooterTests.checkSocialNetworksLinks(driver, Constant.socialNetworks, pri, url);
-				FooterTests.checkMagazinesLinks(driver, Constant.magazinsLinks,pri, url);
 				
-		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*		
+//				FooterTests.checkSocialNetworksLinks(driver, Constant.SOCIAL_NETWORKS, pri, url);
+//				FooterTests.checkMagazinesLinks(driver, Constant.MAGAZINES_LINKS,pri, url);
+//				FooterTests.checkSitesLinks(driver, Constant.SITE_LINKS, pri, url);
+				FooterTests.checkInternalLinks(driver,Constant.INTERNAL_LINKS_STAGING, pri, url);
+				
+		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
+		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				driver.close();
 				pri.close();
 		}

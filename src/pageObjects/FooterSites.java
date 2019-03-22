@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FooterSites {
 public static WebElement amicaLink (WebDriver driver) {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+	//1	
+	WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement amicaLink;
 		try {
 			 amicaLink=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@title, 'Amica Webseite besuchen')]")));
@@ -23,7 +24,7 @@ public static WebElement amicaLink (WebDriver driver) {
 	}
 
 public static WebElement bambiLink (WebDriver driver) {
-	
+	//2
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement bambiLink;
 	try {
@@ -37,7 +38,7 @@ public static WebElement bambiLink (WebDriver driver) {
 	return bambiLink;				
 }
 public static WebElement focusLink (WebDriver driver) {
-	
+	//3
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement focusLink;
 	try {
@@ -51,7 +52,7 @@ public static WebElement focusLink (WebDriver driver) {
 	return focusLink;				
 }
 public static WebElement freizeitrevueLink (WebDriver driver) {
-	
+	//4
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement freizeitrevueLink;
 	try {
@@ -65,7 +66,7 @@ public static WebElement freizeitrevueLink (WebDriver driver) {
 	return freizeitrevueLink;				
 }
 public static WebElement guterRatLink (WebDriver driver) {
-	
+	//5
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement guterRatLink;
 	try {
@@ -79,7 +80,7 @@ public static WebElement guterRatLink (WebDriver driver) {
 	return guterRatLink;				
 }
 public static WebElement meinSchonerGartenLink (WebDriver driver) {
-	
+	//6
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement meinSchonerGartenLink;
 	try {
@@ -93,7 +94,7 @@ public static WebElement meinSchonerGartenLink (WebDriver driver) {
 	return meinSchonerGartenLink;				
 }
 public static WebElement superilluLink (WebDriver driver) {
-	
+	//7
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement superilluLink;
 	try {
@@ -107,7 +108,7 @@ public static WebElement superilluLink (WebDriver driver) {
 	return superilluLink;				
 }
 public static WebElement tributetobambiLink (WebDriver driver) {
-	
+	//8
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement tributetobambiLink;
 	try {
@@ -121,7 +122,7 @@ public static WebElement tributetobambiLink (WebDriver driver) {
 	return tributetobambiLink;				
 }
 public static WebElement tvSpielfilmLink (WebDriver driver) {
-	
+	//9
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement tvSpielfilmLink;
 	try {
@@ -135,7 +136,7 @@ public static WebElement tvSpielfilmLink (WebDriver driver) {
 	return tvSpielfilmLink;				
 }
 public static WebElement dasKochrezeptLink (WebDriver driver) {
-	
+	//10
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement dasKochrezeptLink;
 	try {

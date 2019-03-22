@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import actions.FooterActions;
 
 import pageObjects.HomePage;
+import utility.Print;
 
 public class FooterTests {
 	public static void checkSocialNetworksLinks(WebDriver driver,String[]expectedUrls, PrintWriter pri, String url) throws InterruptedException {
@@ -43,11 +44,7 @@ public class FooterTests {
 		
 		writeInTestResults= result +testStatus;
 		
-		pri.write(writeInTestResults+"\r" );
-		for(int i=0;i<50;i++) {
-			pri.write("-");
-		}
-		pri.write("\r");
+		Print.prettyPrint(writeInTestResults, pri);
 		
 	}
 	
@@ -86,11 +83,9 @@ public class FooterTests {
 		}
 		
 		writeInTestResults= result +testStatus;
-		pri.write(writeInTestResults+"\r" );
-		for(int i=0;i<50;i++) {
-			pri.write("-");
-		}
-		pri.write("\r");
+		Print.prettyPrint(writeInTestResults, pri);
+		
+		
 		
 	}
 

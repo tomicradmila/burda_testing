@@ -159,14 +159,12 @@ public class FooterActions {
 		else {
 			urls[4]="";
 		}
-		
-		
-		
+				
 		return urls;
 				
 	}
 	
-	//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+	//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 	
 	public static String[] checkSites(WebDriver driver) {
 		String[] urls = new String[10];
@@ -185,9 +183,6 @@ public class FooterActions {
 		else {
 			urls[0]="";
 		}
-		
-		
-		
 		
 		
 		return urls;

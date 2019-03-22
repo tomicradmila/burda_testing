@@ -21,7 +21,7 @@ public class Main {
 		//String line="";
 		//FileReader fr=new FileReader(filePath);//citac fajlova, kao nas skener
 		//BufferedReader bf=new BufferedReader(fr);
-		String url=Constant.burdaMainUrl;
+		String url=Constant.BURDA_MAIN_URL_STAGING;
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
 		String fileName=dateFormat.format(date).toString()+".txt";

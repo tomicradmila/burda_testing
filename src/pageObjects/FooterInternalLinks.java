@@ -176,7 +176,7 @@ public static WebElement AGBLink (WebDriver driver) {
 	return AGBLink;				
 }
 
-public static WebElement ImpressumLink (WebDriver driver) {
+public static WebElement impressumLink (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement ImpressumLink;

@@ -11,7 +11,8 @@ import utility.Constant;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import testAssemblies.FooterSocialMediaLinks;
+import testAssemblies.Footer;
+
 
 
 public class Main {
@@ -37,13 +38,11 @@ public class Main {
 				
 				//here is where we call our test
 				
-//				FooterTests.checkSocialNetworksLinks(driver, Constant.SOCIAL_NETWORKS, pri, url);
-//				FooterTests.checkMagazinesLinks(driver, Constant.MAGAZINES_LINKS,pri, url);
-//				FooterTests.checkSitesLinks(driver, Constant.SITE_LINKS, pri, url);
-				//FooterTests.checkInternalLinks(driver,Constant.INTERNAL_LINKS_STAGING, pri, url);
-//				
-				FooterSocialMediaLinks.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
-				//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
+				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
+				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
+				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
+				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
+		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				driver.close();
 				pri.close();

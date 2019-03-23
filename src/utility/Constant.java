@@ -7,18 +7,10 @@ public class Constant {
 	public static final String BURDA_MAIN_URL="https://www.burdastyle.de/";
 	public static final String BURDA_MAIN_URL_STAGING="https://staging-env.burdastyle.de/";
 	
-	public static final String [] SOCIAL_NETWORKS = {"https://www.facebook.com/burdastyle","https://www.pinterest.de/burdastylede/"
-			,"https://www.instagram.com/burdastylegermany/","https://www.youtube.com/user/NaehenmitBurda"
-	};
 	
-	public static final String [] MAGAZINES_LINKS = {"https://www.bunte.de/","https://www.freundin.de/"
-			,"https://www.instyle.de/","https://www.elle.de/", "https://www.harpersbazaar.de/"
-	};
 	
-	public static final String [] SITE_LINKS = {"https://www.amica.de/","http://www.bambi.de/"
-			,"https://www.focus.de/","http://www.freizeitrevue.de/", "http://guter-rat.de/","https://www.mein-schoener-garten.de/","https://www.superillu.de/"
-			,"https://www.tributetobambi-stiftung.de/","https://www.tvspielfilm.de/","https://www.daskochrezept.de/"
-	};
+	
+	
 	/////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	

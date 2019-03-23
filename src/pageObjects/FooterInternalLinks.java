@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FooterInternalLinks {
 	//Burda Style
 	
-	public static WebElement wirUberUnsmLink (WebDriver driver) {
+	public static WebElement wirUberUnsLink (WebDriver driver) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement wirUberUnsmLink;
@@ -315,7 +315,7 @@ public static WebElement datenschutzanfrageLink (WebDriver driver) {
 }
 
 //WERBUNG
-public static WebElement mediatenOnlineLink (WebDriver driver) {
+public static WebElement mediadatenOnlineLink (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 10);
 	WebElement mediatenOnlineLink;

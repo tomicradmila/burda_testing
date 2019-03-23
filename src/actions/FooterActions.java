@@ -9,6 +9,36 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class FooterActions {
+	
+	public static String checkFacebookLink(WebDriver driver,String facebookUrl,String homeUrl, String homeStagingUrl) {
+		
+		
+		Actions builder = new Actions(driver);
+		if(FooterSocialNetworks.facebookLink(driver)!=null) {
+			Action clickOnFacebook=builder
+					.moveToElement(FooterSocialNetworks.facebookLink(driver))
+					.click()
+					.build();
+			
+			clickOnFacebook.perform();
+			if(driver.getCurrentUrl().equals(facebookUrl)) {
+				driver.navigate().back();
+				if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
+					return "passed";
+				}
+				return "failed";
+			}
+			else {
+				return "failed";
+			}
+			
+		}
+		else {
+			return "failed";
+		}
+		
+	}
+	
 	public static String[] checkSocialNetworks(WebDriver driver) {
 		String[] urls = new String[4];
 		Actions builder = new Actions(driver);

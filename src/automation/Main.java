@@ -21,7 +21,9 @@ public class Main {
 		//String line="";
 		//FileReader fr=new FileReader(filePath);//citac fajlova, kao nas skener
 		//BufferedReader bf=new BufferedReader(fr);
-		String url=Constant.BURDA_MAIN_URL_STAGING;
+		String homeStagingUrl=Constant.BURDA_MAIN_URL_STAGING;
+		String homeUrl=Constant.BURDA_MAIN_URL;
+		String startingPoint=Constant.BURDA_MAIN_URL;
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
 		String fileName=dateFormat.format(date).toString()+".txt";
@@ -37,7 +39,8 @@ public class Main {
 //				FooterTests.checkSocialNetworksLinks(driver, Constant.SOCIAL_NETWORKS, pri, url);
 //				FooterTests.checkMagazinesLinks(driver, Constant.MAGAZINES_LINKS,pri, url);
 //				FooterTests.checkSitesLinks(driver, Constant.SITE_LINKS, pri, url);
-				FooterTests.checkInternalLinks(driver,Constant.INTERNAL_LINKS_STAGING, pri, url);
+				//FooterTests.checkInternalLinks(driver,Constant.INTERNAL_LINKS_STAGING, pri, url);
+				FooterTests.checkFacebookLink(driver, homeUrl, homeStagingUrl, pri,startingPoint);
 				
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*

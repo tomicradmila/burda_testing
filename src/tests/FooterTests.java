@@ -173,4 +173,19 @@ public class FooterTests {
 		Print.prettyPrint(writeInTestResults, pri);
 			
 	}
-}
+	
+	////////////////////////////////////////////////////////////////////////
+	
+	public static void checkFacebookLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+		driver.get(startingPoint);
+		driver.manage().window().maximize();
+		if(HomePage.cookieButton(driver)!=null) {
+			HomePage.cookieButton(driver).click();
+		}
+		String description="check if facebook links works ok";
+		String facebookUrl="https://www.facebook.com/burdastyle";
+		String testResult=FooterActions.checkFacebookLink(driver, facebookUrl, homeUrl, homeStagingUrl);
+		String writeInTestResults="test name: "+description+"---- status: "+testResult;
+		Print.prettyPrint(writeInTestResults, pri);
+	}
+};

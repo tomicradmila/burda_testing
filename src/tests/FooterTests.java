@@ -18,7 +18,7 @@ public class FooterTests {
 	
 	
 	
-	public static void checkFacebookLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkFacebookLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -30,9 +30,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,facebookUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkPinterestLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkPinterestLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -44,9 +45,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,pinterestUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkInstagramLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkInstagramLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -58,9 +60,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,instagramUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkYoutubeLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkYoutubeLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -72,10 +75,11 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,youtubeUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
 /////////////////////////////////////////////////////////////////////////////////////////////
-	public static void checkWirUberUnsLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkWirUberUnsLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -88,9 +92,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkNewsletterLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkNewsletterLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -104,7 +109,7 @@ public class FooterTests {
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
 	}
-	public static void checkAbonnementLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkAbonnementLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -117,8 +122,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkArchivLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkArchivLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -131,8 +137,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkCommunityRichtlinienLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkCommunityRichtlinienLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -145,8 +152,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkFAQLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkFAQLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -159,8 +167,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkBestellvorgangLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkBestellvorgangLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -173,8 +182,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkDownloadAnleitungLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkDownloadAnleitungLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -187,8 +197,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkVersandkodtenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkVersandkodtenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -201,8 +212,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkKontaktLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkKontaktLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -215,8 +227,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkAGBLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkAGBLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -229,8 +242,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkImpressumLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkImpressumLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -243,8 +257,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkDatenschutzbestimmungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkDatenschutzbestimmungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -257,8 +272,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checNutzungsbedingungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checNutzungsbedingungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -271,8 +287,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkUnsereWerbungLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkUnsereWerbungLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -285,8 +302,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkGewinnspielbedingungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkGewinnspielbedingungenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -299,8 +317,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkGesuhtGefundenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkGesuhtGefundenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -313,8 +332,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkNahkurseLinkLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkNahkurseLinkLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -327,8 +347,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkHandleradressenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkHandleradressenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -341,8 +362,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkDatenschutzanfrageLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkDatenschutzanfrageLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -355,8 +377,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkMediadatenOnlineLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkMediadatenOnlineLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -369,8 +392,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkMediatenPrintLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkMediatenPrintLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -383,8 +407,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkAnmldenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkAnmldenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -397,10 +422,11 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 ///////////////////////////////////////////////////////////////////////////////
 	
-	public static void checkBunteLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkBunteLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -413,9 +439,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkFreundinLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkFreundinLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -428,9 +455,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkInStyleLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkInStyleLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -443,8 +471,9 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
-	public static void checkElleLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkElleLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -457,9 +486,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkBazaarLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkBazaarLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -472,10 +502,11 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	/////////////////////////////////////////////////////////////////////////
 	//EXTERNAL LINKS
-	public static void checkAmicaLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkAmicaLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -488,9 +519,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkBambiLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkBambiLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -503,9 +535,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkFocusLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkFocusLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -518,9 +551,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkFreizeitRevueLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkFreizeitRevueLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -533,9 +567,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkGuterRatLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkGuterRatLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -548,9 +583,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkMeinSchoeneGartenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkMeinSchoeneGartenLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -563,11 +599,12 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
 	
 	
-	public static void checkSuperilluLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkSuperilluLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -580,9 +617,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkTributetoBambiLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkTributetoBambiLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -595,9 +633,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkTVSpielfilmLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkTVSpielfilmLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -610,9 +649,10 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
-	public static void checkDasKochrezeptLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	public static void checkDasKochrezeptLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,PrintWriter pri2,String startingPoint) {
 		driver.get(startingPoint);
 		driver.manage().window().maximize();
 		if(HomePage.cookieButton(driver)!=null) {
@@ -625,6 +665,7 @@ public class FooterTests {
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
+		Print.addToHtml(description, testResult, pri2);
 	}
 	
 };

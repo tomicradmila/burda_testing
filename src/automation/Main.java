@@ -18,19 +18,18 @@ import testAssemblies.Footer;
 public class Main {
 
 	public static void main(String[] args) {
-				
-		//String filePath="C:\\IT_Bootcamp\\JAVA\\2018-10-02\\TestProba.txt";
-		//String line="";
-		//FileReader fr=new FileReader(filePath);//citac fajlova, kao nas skener
-		//BufferedReader bf=new BufferedReader(fr);
+		
 		String homeStagingUrl=Constant.BURDA_MAIN_URL_STAGING;
 		String homeUrl=Constant.BURDA_MAIN_URL;
 		String startingPoint=Constant.BURDA_MAIN_URL;
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
 		String fileName=dateFormat.format(date).toString()+".txt";
+		String fileName2=dateFormat.format(date).toString()+".html";
 		try {
 				PrintWriter pri=new PrintWriter(fileName);
+				PrintWriter pri2=new PrintWriter(fileName2);
+				pri2.write(Constant.BEFORE);
 				System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 				WebDriver driver=new ChromeDriver();
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -38,14 +37,17 @@ public class Main {
 				
 				//here is where we call our test
 				
-				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
-				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
-				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
-				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri, startingPoint);
+				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
+				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
+				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-				driver.close();
+				//driver.close();
 				pri.close();
+				pri2.write(Constant.AFTER);
+				pri2.close();
+				driver.get("file:///home/rada/eclipse-workspace/burda_testing/"+fileName2);
 		}
 		catch(Exception e){
 			e.printStackTrace();

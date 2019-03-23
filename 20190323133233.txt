@@ -1,0 +1,1 @@
+test name: check if facebook links works ok---- status: failed--------------------------------------------------

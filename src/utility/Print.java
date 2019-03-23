@@ -7,7 +7,7 @@ public class Print {
 	public static void prettyPrint(String input, PrintWriter pri) {
 		
 		pri.write(input+"\r" );
-		for(int i=0;i<50;i++) {
+		for(int i=0;i<60;i++) {
 			pri.write("-");
 		}
 		pri.write("\r");

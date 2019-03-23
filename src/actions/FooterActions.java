@@ -39,6 +39,93 @@ public class FooterActions {
 		
 	}
 	
+public static String checkPinterestLink(WebDriver driver,String pinterestUrl,String homeUrl, String homeStagingUrl) {
+		
+		
+		Actions builder = new Actions(driver);
+		if(FooterSocialNetworks.pinterestLink(driver)!=null) {
+			Action clickOnFacebook=builder
+					.moveToElement(FooterSocialNetworks.pinterestLink(driver))
+					.click()
+					.build();
+			
+			clickOnFacebook.perform();
+			if(driver.getCurrentUrl().equals(pinterestUrl)) {
+				driver.navigate().back();
+				if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
+					return "passed";
+				}
+				return "failed";
+			}
+			else {
+				return "failed";
+			}
+			
+		}
+		else {
+			return "failed";
+		}
+		
+	}
+
+public static String checkInstagramLink(WebDriver driver,String instagramUrl,String homeUrl, String homeStagingUrl) {
+	
+	
+	Actions builder = new Actions(driver);
+	if(FooterSocialNetworks.instagramLink(driver)!=null) {
+		Action clickOnFacebook=builder
+				.moveToElement(FooterSocialNetworks.instagramLink(driver))
+				.click()
+				.build();
+		
+		clickOnFacebook.perform();
+		if(driver.getCurrentUrl().equals(instagramUrl)) {
+			driver.navigate().back();
+			if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
+				return "passed";
+			}
+			return "failed";
+		}
+		else {
+			return "failed";
+		}
+		
+	}
+	else {
+		return "failed";
+	}
+	
+}
+
+public static String checkYoutubeLink(WebDriver driver,String youtubeUrl,String homeUrl, String homeStagingUrl) {
+	
+	
+	Actions builder = new Actions(driver);
+	if(FooterSocialNetworks.youtubeLink(driver)!=null) {
+		Action clickOnFacebook=builder
+				.moveToElement(FooterSocialNetworks.youtubeLink(driver))
+				.click()
+				.build();
+		
+		clickOnFacebook.perform();
+		if(driver.getCurrentUrl().equals(youtubeUrl)) {
+			driver.navigate().back();
+			if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
+				return "passed";
+			}
+			return "failed";
+		}
+		else {
+			return "failed";
+		}
+		
+	}
+	else {
+		return "failed";
+	}
+	
+}
+	
 	public static String[] checkSocialNetworks(WebDriver driver) {
 		String[] urls = new String[4];
 		Actions builder = new Actions(driver);

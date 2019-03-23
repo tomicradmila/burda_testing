@@ -182,10 +182,50 @@ public class FooterTests {
 		if(HomePage.cookieButton(driver)!=null) {
 			HomePage.cookieButton(driver).click();
 		}
-		String description="check if facebook links works ok";
+		String description="check if facebook link works ok";
 		String facebookUrl="https://www.facebook.com/burdastyle";
 		String testResult=FooterActions.checkFacebookLink(driver, facebookUrl, homeUrl, homeStagingUrl);
 		String writeInTestResults="test name: "+description+"---- status: "+testResult;
 		Print.prettyPrint(writeInTestResults, pri);
 	}
+	
+	public static void checkPinterestLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+		driver.get(startingPoint);
+		driver.manage().window().maximize();
+		if(HomePage.cookieButton(driver)!=null) {
+			HomePage.cookieButton(driver).click();
+		}
+		String description="check if pinterest link works ok";
+		String pinterestUrl="https://www.pinterest.de/burdastylede/";
+		String testResult=FooterActions.checkPinterestLink(driver, pinterestUrl, homeUrl, homeStagingUrl);
+		String writeInTestResults="test name: "+description+"---- status: "+testResult;
+		Print.prettyPrint(writeInTestResults, pri);
+	}
+
+
+public static void checkInstagramLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	driver.get(startingPoint);
+	driver.manage().window().maximize();
+	if(HomePage.cookieButton(driver)!=null) {
+		HomePage.cookieButton(driver).click();
+	}
+	String description="check if instagram link works ok";
+	String instagramUrl="https://www.instagram.com/burdastylegermany/";
+	String testResult=FooterActions.checkInstagramLink(driver, instagramUrl, homeUrl, homeStagingUrl);
+	String writeInTestResults="test name: "+description+"---- status: "+testResult;
+	Print.prettyPrint(writeInTestResults, pri);
+}
+
+public static void checkYoutubeLink(WebDriver driver,String homeUrl, String homeStagingUrl,PrintWriter pri,String startingPoint) {
+	driver.get(startingPoint);
+	driver.manage().window().maximize();
+	if(HomePage.cookieButton(driver)!=null) {
+		HomePage.cookieButton(driver).click();
+	}
+	String description="check if youtube link works ok";
+	String youtubeUrl="https://www.youtube.com/user/NaehenmitBurda";
+	String testResult=FooterActions.checkYoutubeLink(driver, youtubeUrl, homeUrl, homeStagingUrl);
+	String writeInTestResults="test name: "+description+"---- status: "+testResult;
+	Print.prettyPrint(writeInTestResults, pri);
+}
 };

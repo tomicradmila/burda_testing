@@ -41,8 +41,11 @@ public class Main {
 //				FooterTests.checkSitesLinks(driver, Constant.SITE_LINKS, pri, url);
 				//FooterTests.checkInternalLinks(driver,Constant.INTERNAL_LINKS_STAGING, pri, url);
 				FooterTests.checkFacebookLink(driver, homeUrl, homeStagingUrl, pri,startingPoint);
-				
-		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
+				FooterTests.checkPinterestLink(driver, homeUrl, homeStagingUrl, pri,startingPoint);
+				FooterTests.checkInstagramLink(driver, homeUrl, homeStagingUrl, pri,startingPoint);
+				FooterTests.checkYoutubeLink(driver, homeUrl, homeStagingUrl, pri,startingPoint);
+
+				//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				driver.close();
 				pri.close();

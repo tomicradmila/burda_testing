@@ -38,9 +38,9 @@ public class Main {
 				//here is where we call our test
 				
 				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
-				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
-				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
-				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				//Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
+				//Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				//Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				//driver.close();

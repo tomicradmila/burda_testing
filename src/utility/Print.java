@@ -4,9 +4,10 @@ import java.io.PrintWriter;
 
 public class Print {
 	
-	public static void prettyPrint(String input, PrintWriter pri) {
+	public static void prettyPrint(String description, String result, String testNumber, PrintWriter pri) {
 		
-		pri.write(input+"\r" );
+		String writeInFile=testNumber+"  "+description+"   "+"status: "+result;
+		pri.write(writeInFile+"\r" );
 		for(int i=0;i<60;i++) {
 			pri.write("-");
 		}
@@ -15,9 +16,9 @@ public class Print {
 		
 	}
 	
-public static void addToHtml(String testName, String testStatus,PrintWriter pri2) {
+public static void addToHtml(String testName, String testStatus,String testNumber,PrintWriter pri2) {
 		String html="<div class=\"testContainer\">\n" + 
-				"    	<div>test number</div>\n" + 
+				"    	<div>"+testNumber+"</div>\n" + 
 				"      	<div className=\"songTitle\">"+testName+"</div>\n" + 
 				"      	<div className=\"songPerformer\">"+testStatus+"</div>\n" + 
 				"    </div>";

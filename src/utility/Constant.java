@@ -10,6 +10,7 @@ public class Constant {
 	public static final String BEFORE="<!doctype html>\n" + 
 			"<html lang=\"en\">\n" + 
 			"  <head>\n" + 
+			"<link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\">"+
 			"    <title>burda tests</title>\n" + 
 			"    <!-- Required meta tags -->\n" + 
 			"    <meta charset=\"utf-8\">\n" + 

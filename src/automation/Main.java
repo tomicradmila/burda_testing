@@ -21,7 +21,7 @@ public class Main {
 		
 		String homeStagingUrl=Constant.BURDA_MAIN_URL_STAGING;
 		String homeUrl=Constant.BURDA_MAIN_URL;
-		String startingPoint=Constant.BURDA_MAIN_URL;
+		String startingPoint=Constant.BURDA_MAIN_URL_STAGING;
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
 		String fileName=dateFormat.format(date).toString()+".txt";
@@ -38,16 +38,16 @@ public class Main {
 				//here is where we call our test
 				
 				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
-				//Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
+				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				//Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 				//Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-				//driver.close();
+				driver.close();
 				pri.close();
 				pri2.write(Constant.AFTER);
 				pri2.close();
-				driver.get("file:///home/rada/eclipse-workspace/burda_testing/"+fileName2);
+				//driver.get("file:///home/rada/eclipse-workspace/burda_testing/"+fileName2);
 		}
 		catch(Exception e){
 			e.printStackTrace();

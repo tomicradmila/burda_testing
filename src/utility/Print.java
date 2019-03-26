@@ -17,11 +17,26 @@ public class Print {
 	}
 	
 public static void addToHtml(String testName, String testStatus,String testNumber,PrintWriter pri2) {
-		String html="<div class=\"testContainer\">\n" + 
-				"    	<div>"+testNumber+"</div>\n" + 
-				"      	<div className=\"songTitle\">"+testName+"</div>\n" + 
-				"      	<div className=\"songPerformer\">"+testStatus+"</div>\n" + 
+		String html;
+	
+	if(testStatus.equals("passed")) {
+				html="\r"+
+				"<div class=\"testContainer\">\n" + 
+				"    	<div class=\"testNumber\">"+testNumber+"</div>\n" + 
+				"      	<div class=\"testTitle\">"+testName+"</div>\n" + 
+				"      	<div class=\"testStatus\">"+testStatus+"</div>\n" + 
 				"    </div>";
+		}
+	else {
+		html="\r"+
+				"<div class=\"testContainer\">\n" + 
+				"    	<div class=\"testNumber\">"+testNumber+"</div>\n" + 
+				"      	<div class=\"testTitle\">"+testName+"</div>\n" + 
+				"      	<div class=\"testStatusFailed\">"+testStatus+"</div>\n" + 
+				"    </div>";
+	}
+	
+	
 		pri2.write(html);
 		
 		

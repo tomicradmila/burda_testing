@@ -403,7 +403,7 @@ public class FooterTests {
 			HomePage.cookieButton(driver).click();
 		}
 		String testNumber="000026";
-		String description="check if Wir Uber Uns link works ok";
+		String description="check if Mediaten Print link works ok";
 		String targetUrl="https://bcn.burda.de/marken/national/titel/burda-style/";
 	
 		WebElement element=FooterInternalLinks.mediatenPrintLink(driver);

@@ -39,15 +39,15 @@ public class Main {
 				
 				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
-				//Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
-				//Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				driver.close();
 				pri.close();
 				pri2.write(Constant.AFTER);
 				pri2.close();
-				//driver.get("file:///home/rada/eclipse-workspace/burda_testing/"+fileName2);
+				//driver.get("file:../../"+fileName2);
 		}
 		catch(Exception e){
 			e.printStackTrace();

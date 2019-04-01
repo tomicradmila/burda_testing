@@ -42,7 +42,7 @@ public class FooterTests {
 		}
 		String testNumber="000002";
 		String description="check if pinterest link works ok";
-		String pinterestUrl="https://www.pinterest.de/burdastylede/";
+		String pinterestUrl="https://www.pinterest.de/burdastylede";
 		WebElement element=FooterSocialNetworks.pinterestLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,pinterestUrl, homeUrl, homeStagingUrl);
 		Print.prettyPrint(description, testResult,testNumber, pri);
@@ -57,7 +57,7 @@ public class FooterTests {
 		}
 		String testNumber="000003";
 		String description="check if instagram link works ok";
-		String instagramUrl="https://www.instagram.com/burdastylegermany/";
+		String instagramUrl="https://www.instagram.com/burdastylegermany";
 		WebElement element=FooterSocialNetworks.instagramLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,instagramUrl, homeUrl, homeStagingUrl);
 		Print.prettyPrint(description, testResult,testNumber, pri);
@@ -88,8 +88,8 @@ public class FooterTests {
 		}
 		String testNumber="000005";
 		String description="check if Wir Uber Uns link works ok";
-		String targetUrl="https://www.burdastyle.de/wir-ueber-uns/";
-		String targetUrlStaging="https://staging-env.burdastyle.de/wir-ueber-uns/";
+		String targetUrl="https://www.burdastyle.de/wir-ueber-uns";
+		String targetUrlStaging="https://staging-env.burdastyle.de/wir-ueber-uns";	
 		WebElement element=FooterInternalLinks.wirUberUnsLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		Print.prettyPrint(description, testResult,testNumber, pri);
@@ -224,8 +224,8 @@ public class FooterTests {
 		}
 		String testNumber="000014";
 		String description="check if Kontakt link works ok";
-		String targetUrl="https://www.burdastyle.de/kontakt/";
-		String targetUrlStaging="https://staging-env.burdastyle.de/kontakt/";
+		String targetUrl="https://www.burdastyle.de/kontakt";
+		String targetUrlStaging="https://staging-env.burdastyle.de/kontakt";
 		WebElement element=FooterInternalLinks.kontaktLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		Print.prettyPrint(description, testResult,testNumber, pri);
@@ -299,7 +299,7 @@ public class FooterTests {
 		}
 		String testNumber="000019";
 		String description="check if Unsere werbung link works ok";
-		String targetUrl="https://bcn.burda.de/werbeloesungen/uebersicht/";
+		String targetUrl="https://bcn.burda.de/werbeloesungen/uebersicht";
 		
 		WebElement element=FooterInternalLinks.unsereWerbungLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -329,8 +329,8 @@ public class FooterTests {
 		}
 		String testNumber="000021";
 		String description="check if GesuhtGefunden link works ok";
-		String targetUrl="https://www.burdastyle.de/gesucht-und-gefunden/";
-		String targetUrlStaging="https://staging-env.burdastyle.de/gesucht-und-gefunden/";
+		String targetUrl="https://www.burdastyle.de/gesucht-und-gefunden";
+		String targetUrlStaging="https://staging-env.burdastyle.de/gesucht-und-gefunden";
 		WebElement element=FooterInternalLinks.gesuhtGefundenLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl,targetUrlStaging, homeUrl, homeStagingUrl);
 		Print.prettyPrint(description, testResult,testNumber, pri);
@@ -389,7 +389,7 @@ public class FooterTests {
 		}
 		String testNumber="000025";
 		String description="check if MediadatenOnline link works ok";
-		String targetUrl="https://bcn.burda.de/marken/national/titel/burda-style-online/";
+		String targetUrl="https://bcn.burda.de/marken/national/titel/burda-style-online";
 	
 		WebElement element=FooterInternalLinks.mediadatenOnlineLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -404,7 +404,7 @@ public class FooterTests {
 		}
 		String testNumber="000026";
 		String description="check if Mediaten Print link works ok";
-		String targetUrl="https://bcn.burda.de/marken/national/titel/burda-style/";
+		String targetUrl="https://bcn.burda.de/marken/national/titel/burda-style";
 	
 		WebElement element=FooterInternalLinks.mediatenPrintLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -419,7 +419,7 @@ public class FooterTests {
 		}
 		String testNumber="000027";
 		String description="check if Anmelden link works ok";
-		String targetUrl="http://geschaeftskunden.burdastyle.de/";
+		String targetUrl="http://geschaeftskunden.burdastyle.de";
 		
 		WebElement element=FooterInternalLinks.anmeldenLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -452,7 +452,7 @@ public class FooterTests {
 		}
 		String testNumber="000029";
 		String description="check if Freundin link works ok";
-		String targetUrl="https://www.freundin.de/";
+		String targetUrl="https://www.freundin.de";
 		
 		WebElement element=FooterMagazines.freundinLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -483,7 +483,7 @@ public class FooterTests {
 		}
 		String testNumber="000031";
 		String description="check if Elle link works ok";
-		String targetUrl="https://www.elle.de/";
+		String targetUrl="https://www.elle.de";
 		
 		WebElement element=FooterMagazines.elleLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -499,7 +499,7 @@ public class FooterTests {
 		}
 		String testNumber="000032";
 		String description="check if Bazaar link works ok";
-		String targetUrl="https://www.harpersbazaar.de/";
+		String targetUrl="https://www.harpersbazaar.de";
 		
 		WebElement element=FooterMagazines.bazaarLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -516,7 +516,7 @@ public class FooterTests {
 		}
 		String testNumber="000033";
 		String description="check if Amica link works ok";
-		String targetUrl="https://www.amica.de/";
+		String targetUrl="https://www.amica.de";
 		
 		WebElement element=FooterSites.amicaLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -532,7 +532,7 @@ public class FooterTests {
 		}
 		String testNumber="000034";
 		String description="check if Bambi link works ok";
-		String targetUrl="http://www.bambi.de/";
+		String targetUrl="http://www.bambi.de";
 		
 		WebElement element=FooterSites.bambiLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -548,7 +548,7 @@ public class FooterTests {
 		}
 		String testNumber="000035";
 		String description="check if Focus link works ok";
-		String targetUrl="https://www.focus.de/";
+		String targetUrl="https://www.focus.de";
 		
 		WebElement element=FooterSites.focusLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -564,7 +564,7 @@ public class FooterTests {
 		}
 		String testNumber="000036";
 		String description="check if Freizeit Revue link works ok";
-		String targetUrl="http://www.freizeitrevue.de/";
+		String targetUrl="http://www.freizeitrevue.de";
 		
 		WebElement element=FooterSites.freizeitrevueLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -580,7 +580,7 @@ public class FooterTests {
 		}
 		String testNumber="000037";
 		String description="check if Guter Rat link works ok";
-		String targetUrl="http://guter-rat.de/";
+		String targetUrl="guter-rat.de";
 		
 		WebElement element=FooterSites.guterRatLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -596,7 +596,7 @@ public class FooterTests {
 		}
 		String testNumber="000038";
 		String description="check if Mein Schoener Garten link works ok";
-		String targetUrl="https://www.mein-schoener-garten.de/";
+		String targetUrl="https://www.mein-schoener-garten.de";
 		
 		WebElement element=FooterSites.meinSchonerGartenLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -614,7 +614,7 @@ public class FooterTests {
 		}
 		String testNumber="000039";
 		String description="check if Superillu link works ok";
-		String targetUrl="https://www.superillu.de/";
+		String targetUrl="https://www.superillu.de";
 		
 		WebElement element=FooterSites.superilluLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -630,7 +630,7 @@ public class FooterTests {
 		}
 		String testNumber="000040";
 		String description="check if Tributeto Bambi link works ok";
-		String targetUrl="https://www.tributetobambi-stiftung.de/";
+		String targetUrl="https://www.tributetobambi-stiftung.de";
 		
 		WebElement element=FooterSites.tributetobambiLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -646,7 +646,7 @@ public class FooterTests {
 		}
 		String testNumber="000041";
 		String description="check if TV Spielfilm link works ok";
-		String targetUrl="https://www.tvspielfilm.de/";
+		String targetUrl="https://www.tvspielfilm.de";
 		
 		WebElement element=FooterSites.tvSpielfilmLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);
@@ -662,7 +662,7 @@ public class FooterTests {
 		}
 		String testNumber="000042";
 		String description="check if Das Kochrezept link works ok";
-		String targetUrl="https://www.daskochrezept.de/";
+		String targetUrl="https://www.daskochrezept.de";
 		
 		WebElement element=FooterSites.dasKochrezeptLink(driver);
 		String testResult=FooterActions.checkLink(driver, element,targetUrl, homeUrl, homeStagingUrl);

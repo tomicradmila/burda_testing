@@ -19,7 +19,7 @@ public class FooterActions {
 					.build();
 			
 			clickOnElement.perform();
-			if(driver.getCurrentUrl().equals(targetUrl)) {
+			if(driver.getCurrentUrl().contains(targetUrl)) {
 				driver.navigate().back();
 				if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
 					return "passed";
@@ -47,7 +47,7 @@ public class FooterActions {
 					.build();
 			
 			clickOnElement.perform();
-			if(driver.getCurrentUrl().equals(targetUrl)||driver.getCurrentUrl().equals(targetUrlStaging)) {
+			if(driver.getCurrentUrl().contains(targetUrl)||driver.getCurrentUrl().contains(targetUrlStaging)) {
 				driver.navigate().back();
 				if(driver.getCurrentUrl().equals(homeUrl)||driver.getCurrentUrl().equals(homeStagingUrl)) {
 					return "passed";

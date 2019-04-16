@@ -30,8 +30,18 @@ body {
 
 }
 
+.testGroup{
+    color:#EC008C;
+    text-align: center;
+   
+    justify-content: center;
+
+}
+
+
+
 .testNumber{
-    margin-left: 10px;
+    padding-left: 10px;
     
 }
 

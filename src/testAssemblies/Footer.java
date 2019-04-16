@@ -1,6 +1,7 @@
 package testAssemblies;
 
 import java.io.PrintWriter;
+import utility.Print;
 
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +10,8 @@ import tests.FooterTests;
 public class Footer {
 	
 	public static void socialMedialLinksTests(WebDriver driver, String homeUrl,String homeStagingUrl,PrintWriter pri,PrintWriter pri2, String startingPoint) {
+		String testGroupTitle="Footer - Social Media Tests";
+		Print.addTestGroupTitle(testGroupTitle,pri2);
 		FooterTests.checkFacebookLink(driver, homeUrl, homeStagingUrl, pri,pri2,startingPoint);
 		FooterTests.checkPinterestLink(driver, homeUrl, homeStagingUrl, pri,pri2,startingPoint);
 		FooterTests.checkInstagramLink(driver, homeUrl, homeStagingUrl, pri,pri2,startingPoint);
@@ -16,6 +19,9 @@ public class Footer {
 	}
 
 	public static void internalLinksTests(WebDriver driver, String homeUrl,String homeStagingUrl,PrintWriter pri,PrintWriter pri2, String startingPoint) {
+		String testGroupTitle="Footer - Internal Links Tests";
+		Print.addTestGroupTitle(testGroupTitle,pri2);
+		
 		FooterTests.checkWirUberUnsLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkNewsletterLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkAbonnementLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
@@ -42,6 +48,9 @@ public class Footer {
 	}
 	
 	public static void magazinesLinksTests(WebDriver driver, String homeUrl,String homeStagingUrl,PrintWriter pri, PrintWriter pri2,String startingPoint) {
+		String testGroupTitle="Footer - Magazines Links Tests";
+		Print.addTestGroupTitle(testGroupTitle,pri2);
+		
 		FooterTests.checkBunteLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkFreundinLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkInStyleLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
@@ -50,6 +59,9 @@ public class Footer {
 	}
 	
 	public static void externalLinksTests(WebDriver driver, String homeUrl,String homeStagingUrl,PrintWriter pri,PrintWriter pri2, String startingPoint) {
+		String testGroupTitle="Footer - External Links Tests";
+		Print.addTestGroupTitle(testGroupTitle,pri2);
+		
 		FooterTests.checkAmicaLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkBambiLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 		FooterTests.checkFocusLink(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);

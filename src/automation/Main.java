@@ -7,6 +7,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import utility.Constant;
+import utility.Print;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,20 +35,28 @@ public class Main {
 				WebDriver driver=new ChromeDriver();
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-				
+				//start timing our tests
+				long startTime = System.currentTimeMillis();
 				//here is where we call our test
 				
 				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				
+				//stop timing our tests
+				long finishTime = System.currentTimeMillis();
+				
+				long testDuration=finishTime-startTime;
+				
+				Print.addTestTimeToHtml(testDuration, pri2);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 				driver.close();
 				pri.close();
 				pri2.write(Constant.AFTER);
 				pri2.close();
-				//driver.get("file:../../"+fileName2);
+				//driver.get("file:"+fileName2);
 		}
 		catch(Exception e){
 			e.printStackTrace();

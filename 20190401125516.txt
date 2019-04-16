@@ -1,1 +1,0 @@
-000037  check if Guter Rat link works ok   status: passed------------------------------------------------------------

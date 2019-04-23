@@ -13,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import testAssemblies.Footer;
+import tests.RegisterTests;
 
 
 
@@ -43,6 +44,7 @@ public class Main {
 				Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 				Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
+				//RegisterTests.makeAndDeleteProfile(driver);
 				
 				//stop timing our tests
 				long finishTime = System.currentTimeMillis();

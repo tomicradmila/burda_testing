@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Register {
+	
+	//1
 public static WebElement benutzernameFestlegenLabel (WebDriver driver) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -22,6 +24,7 @@ public static WebElement benutzernameFestlegenLabel (WebDriver driver) {
 		return benutzernameFestlegenLabel;				
 	}
 
+//2
 public static WebElement benutzernameFestlegen (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -37,6 +40,7 @@ public static WebElement benutzernameFestlegen (WebDriver driver) {
 	return benutzernameFestlegen;				
 }
 
+//3
 public static WebElement deineEmailAdresseLabel (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -52,6 +56,7 @@ public static WebElement deineEmailAdresseLabel (WebDriver driver) {
 	return deineEmailAdresseLabel;				
 }
 
+//4
 public static WebElement deineEmailAdresse (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -67,6 +72,7 @@ public static WebElement deineEmailAdresse (WebDriver driver) {
 	return deineEmailAdresse;				
 }
 
+//5
 public static WebElement passwortFestlegenLabel (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -82,6 +88,7 @@ public static WebElement passwortFestlegenLabel (WebDriver driver) {
 	return passwortFestlegenLabel;				
 }
 
+//6
 public static WebElement passwortFestlegen (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -97,6 +104,7 @@ public static WebElement passwortFestlegen (WebDriver driver) {
 	return passwortFestlegen;				
 }
 
+//7
 public static WebElement ichStimmeCheckBox (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -112,6 +120,7 @@ public static WebElement ichStimmeCheckBox (WebDriver driver) {
 	return ichStimmeCheckBox;				
 }
 
+//8
 public static WebElement nutzungsbedingungenLink (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -127,6 +136,8 @@ public static WebElement nutzungsbedingungenLink (WebDriver driver) {
 	return nutzungsbedingungenLink;				
 }
 
+
+//9
 public static WebElement datenschutzrichtlinieLink (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -142,6 +153,7 @@ public static WebElement datenschutzrichtlinieLink (WebDriver driver) {
 	return datenschutzrichtlinieLink;				
 }
 
+//10
 public static WebElement kostenlosRegistrieren (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -157,6 +169,7 @@ public static WebElement kostenlosRegistrieren (WebDriver driver) {
 	return kostenlosRegistrieren;				
 }
 
+//11
 public static WebElement anmeldenButton (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -172,6 +185,7 @@ public static WebElement anmeldenButton (WebDriver driver) {
 	return anmeldenButton;				
 }
 
+//12
 public static WebElement acceptTermsOfUseError (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);

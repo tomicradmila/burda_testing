@@ -51,16 +51,12 @@ public static void addTestTimeToHtml(long testTime, PrintWriter pri2) {
 	
 	int hours=(int) Math.floor(testTime/3600000);
 	int minutes=(int) Math.floor((testTime-hours*60000)/60000);
-	
 	int seconds=(int) Math.floor((testTime-hours*3600000-minutes*60000)/1000);
 	
 	String totalTime=doubleDigit(hours)+"h "+doubleDigit(minutes)+"m "+doubleDigit(seconds)+"s";
 	String html="<div class=\"testContainer\">Testing duration: "+totalTime+"</div>";
 	pri2.write(html);
-	System.out.println(testTime);
-	System.out.println(hours);
-	System.out.println(minutes);
-	System.out.println(seconds);
+	
 }
 public static void addTestGroupTitle(String testGroupTitle, PrintWriter pri2) {
 	String html="<div class=\"testContainer testGroup\">\n" + testGroupTitle+

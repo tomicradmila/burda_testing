@@ -19,7 +19,61 @@ public class Constant {
 			"    <!-- Bootstrap CSS -->\n" + 
 			"    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css\" integrity=\"sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb\" crossorigin=\"anonymous\">\n" + 
 			"  		<link rel=\"stylesheet\" href=\"burda.css\" type=\"text/css\">\n" + 
-			"   \n" + 
+			"   \n" + "<style>\n" + 
+					"\n" + 
+					"body {\n" + 
+					"  font-family: \"Lato\", sans-serif;\n" + 
+					"  background-color: #F5F5F5;\n" + 
+					"    color:#333;\n" + 
+					"    display:flex;\n" + 
+					"    justify-content: center;\n" + 
+					"}\n" + 
+					".testContainer{\n" + 
+					"    display: flex;\n" + 
+					"    padding: 3px 0 3px 0;\n" + 
+					"    border-bottom: solid 1px #EC008C;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testContainer > div{\n" + 
+					"    display:flex;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testGroup{\n" + 
+					"    color:#EC008C;\n" + 
+					"    text-align: center;\n" + 
+					"    justify-content: center;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testNumber{\n" + 
+					"    padding-left: 10px;\n" + 
+					"}\n" + 
+					"\n" + 
+					".globalContainer{\n" + 
+					"    max-width: 1100px;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testStatusFailed{\n" + 
+					"    color:white;\n" + 
+					"    background-color:rgb(51, 51, 51);\n" + 
+					"    margin-right: 10px;\n" + 
+					"    padding-left: 5px;\n" + 
+					"    padding-right: 5px;\n" + 
+					"    align-self: flex-end;\n" + 
+					"    margin-left:auto ;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testStatus{\n" + 
+					"    margin-left:auto ;\n" + 
+					"    margin-right: 10px;\n" + 
+					"}\n" + 
+					"\n" + 
+					".testTitle{\n" + 
+					"    margin-left: 30px;\n" + 
+					"    margin-right: 30px;\n" + 
+					"    text-align:left;\n" + 
+					"}\n" + 
+					"\n" + 
+					"   </style>"+
 			"</head>\n" + 
 			"  \n" + 
 			"\n" + 

@@ -40,11 +40,11 @@ public class Main {
 				long startTime = System.currentTimeMillis();
 				//here is where we call our test
 				
-				Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
+				//Footer.socialMedialLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				//Footer.internalLinksTests(driver, homeUrl, homeStagingUrl, pri, pri2,startingPoint);
 				//Footer.magazinesLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
 				//Footer.externalLinksTests(driver, homeUrl, homeStagingUrl, pri,pri2, startingPoint);
-				//RegisterTests.makeAndDeleteProfile(driver);
+				RegisterTests.makeAndDeleteProfile(driver);
 				
 				//stop timing our tests
 				long finishTime = System.currentTimeMillis();
@@ -54,7 +54,7 @@ public class Main {
 				Print.addTestTimeToHtml(testDuration, pri2);
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*	
 		//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-				driver.close();
+				//driver.close();
 				pri.close();
 				pri2.write(Constant.AFTER);
 				pri2.close();

@@ -72,7 +72,40 @@ public static WebElement deineEmailAdresse (WebDriver driver) {
 	return deineEmailAdresse;				
 }
 
+public static WebElement deineEmailAdresseWiederholenLabel (WebDriver driver) {
+	
+	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebElement deineEmailAdresseWiederholenLabel;
+	try {
+		deineEmailAdresseWiederholenLabel=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@for='edit-email-confirm']")));
+	}
+	
+	catch(Exception e) {
+		return null;
+	}
+			
+	return deineEmailAdresseWiederholenLabel;				
+}
+
+//4
+public static WebElement deineEmailAdresseWiederholen (WebDriver driver) {
+	
+	WebDriverWait wait = new WebDriverWait(driver, 5);
+	WebElement deineEmailAdresseWiederholen;
+	try {
+		deineEmailAdresseWiederholen=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='edit-email-confirm']")));
+	}
+	
+	catch(Exception e) {
+		return null;
+	}
+			
+	return deineEmailAdresseWiederholen;				
+}
+
 //5
+
+
 public static WebElement passwortFestlegenLabel (WebDriver driver) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -110,7 +143,7 @@ public static WebElement ichStimmeCheckBox (WebDriver driver) {
 	WebDriverWait wait = new WebDriverWait(driver, 5);
 	WebElement ichStimmeCheckBox;
 	try {
-		ichStimmeCheckBox=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='edit-tos']")));
+		ichStimmeCheckBox=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='option']")));
 	}
 	
 	catch(Exception e) {
